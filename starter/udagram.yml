@@ -46,15 +46,17 @@ Resources:
     Properties: 
       LaunchTemplateData:
         UserData:
-          Fn::Base64: |
+          Fn::Base64: !Sub |
             #!/bin/bash
             apt-get update -y
-            sudo apt-get install nginx -y
-            service nginx start
+            sudo apt-get install apache2 -y
+            systemectl start apache2.service
+            cd /var/www/html
+            echo "Udacity Demo Webserver up and running "> index.html
         ImageId: ami-0557a15b87f6559cf
         SecurityGroupIds:
           - !Ref WebServerSecGroup
-        InstanceType: t2.micro
+        InstanceType: t3.small
         BlockDeviceMappings:
         - DeviceName: "/dev/sdk"
           Ebs:

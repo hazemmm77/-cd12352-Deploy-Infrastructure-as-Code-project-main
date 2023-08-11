@@ -1,11 +1,12 @@
 # CD12352 - Infrastructure as Code Project Solution
-# [YOUR NAME HERE]
+# Hazem Fathy
 
 ## Spin up instructions
 TODO
 
-## Tear down instructions
-TODO
+create.sh: This file contains the create-stack command. Arguments: stack name, template file name, parameters file name.
 
-## Other considerations
+
 TODO (optional)
+## URL to the website
+ud-WebAppLB-1H6ZKHRJ6YRB-2115210766.us-east-1.elb.amazonaws.com
