@@ -9,4 +9,4 @@ create.sh: This file contains the create-stack command. Arguments: stack name, t
 
 TODO (optional)
 ## URL to the website
-ud-WebAppLB-1H6ZKHRJ6YRB-2115210766.us-east-1.elb.amazonaws.com
+ud-WebAppLB-G1N7MWQ247Z9-1004452078.us-east-1.elb.amazonaws.com
